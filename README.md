@@ -1,4 +1,3 @@
-# NEXORA Logistics
 # Página web - NEXORA Logistics
 
 Este proyecto es desarrollado para la empresa NEXORA Logistics, con el fin de presentar sus servicios, fortalecer su presencia digital y proporcionar una plataforma informativa e interactiva que permita a sus clientes conocer sus soluciones de transporte, distribución y logística integral.
