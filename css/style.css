@@ -380,10 +380,244 @@ img {
   display: inline-flex;
 }
 
+
+
+/* ---------- Productos ---------- */
+.products { background: #F3F6F8; }
+
+.product-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #FFFFFF;
+  border: 1px solid #DCE5EA;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(9,43,76,.06);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.product-card:hover { 
+  transform: translateY(-6px); 
+  box-shadow: 0 18px 34px rgba(9,43,76,.13); 
+}
+
+.product-card img { 
+  width: 100%; 
+  aspect-ratio: 1.18 / 1; 
+  object-fit: cover; 
+}
+
+.product-body { 
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.product-body h3 { 
+  font-size: 1.2rem; 
+  margin-top: .7rem; 
+  color: #092B4C;
+}
+
+.product-body .price { 
+  color: #159FC3; 
+  font-weight: 700; 
+  margin-top: .2rem; 
+}
+
+.product-body .description { 
+  color: #687D8F; 
+  margin-top: .7rem; 
+  min-height: 52px;
+  flex: 1;
+}
+
+.tag {
+  display: inline-flex;
+  align-self: flex-start;
+  width: fit-content;
+  max-width: 100%;
+  padding: .4rem .9rem;
+  border-radius: 999px;
+  font-size: .8rem;
+  font-weight: 700;
+  background: #E5F4F8;
+  color: #092B4C;
+}
+
+.tag-light { 
+  background: rgba(255,255,255,.2); 
+  color: #FFFFFF; 
+}
+
+/* ---------- Botones ---------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  min-height: 48px;
+  padding: 0 1.5rem;
+  border: none;
+  border-radius: 999px;
+  font-family: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+}
+
+.btn.primary { 
+  background: #159FC3; 
+  color: #FFFFFF; 
+  box-shadow: 0 10px 24px rgba(21,159,195,.22); 
+}
+
+.btn.primary:hover { 
+  background: #092B4C; 
+  transform: translateY(-2px); 
+}
+
+.btn.outline { 
+  background: #FFFFFF; 
+  color: #092B4C; 
+  border: 1px solid #A3B0B9; 
+}
+
+.btn.outline:hover { 
+  background: #E5F4F8; 
+  transform: translateY(-2px); 
+}
+
+.btn.card { 
+  border: 1px solid #159FC3; 
+  background: #EAF6F9; 
+  color: #092B4C; 
+  width: 100%; 
+  margin-top: 1.2rem;
+  flex-shrink: 0;
+}
+
+.btn.card:hover { 
+  background: #159FC3; 
+  color: #FFFFFF; 
+}
+
+.btn.butter { 
+  background: #A3B0B9; 
+  color: #092B4C; 
+}
+
+.btn.butter:hover { 
+  background: #DCE5EA; 
+}
+
+.btn.whatsapp { 
+  background: #159FC3; 
+  color: #FFFFFF; 
+}
+
+button:focus-visible, a:focus-visible { 
+  outline: 3px solid #159FC3; 
+  outline-offset: 3px; 
+}
+
+/* ---------- Secciones ---------- */
+section { padding: 4rem 0; }
+
+.section-heading { 
+  text-align: left; 
+  max-width: 600px; 
+  margin-bottom: 2rem;
+}
+
+.section-heading h2 { 
+  font-size: clamp(1.8rem, 4vw, 2.5rem); 
+  margin-top: .3rem; 
+  color: #092B4C;
+}
+
+.section-heading {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 2.75rem;
+}
+
+.section-heading .eyebrow {
+  display: inline-block;
+  margin-bottom: 0.6rem;
+  color: #159FC3;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.section-heading h2 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  line-height: 1.15;
+  margin: 0.25rem 0 0.75rem;
+}
+
+.section-heading .lead {
+  max-width: 520px;
+  margin: 0 auto;
+  color: #687D8F;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+
+
 /*footer*/
 
 .site-footer {
     align-items: flex-start;
     flex-direction: column;
     justify-content: center;
-  }
+    background: #092B4C;
+}
+
+.site-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.85rem;
+  padding: 2.5rem var(--page-gutter);
+  text-align: center;
+  background: #092B4C;
+  color: #FFFFFF;
+}
+
+
+.site-footer p {
+  font-size: 0.9rem;
+}
+
+
+.site-footer a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 1.1rem;
+  border: 1px solid #159FC3;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+
+.site-footer a:hover {
+  background-color: #159FC3;
+  color: #FFFFFF;
+  transform: translateY(-2px);
+}

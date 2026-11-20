@@ -38,7 +38,7 @@
             </ul>
 
             <button type="button" class="btn primary" onclick="openWhatsApp('Hola, me gustaria solicitar informacion sobre los servicios de NEXORA Logistics.')">
-          <i data-lucide="message-circle"></i> Pedir ahora
+          <i data-lucide="message-circle"></i> Enviar mensaje
         </button>
 
 
@@ -109,7 +109,7 @@
         <!-- Reemplaza trayectoria.jpg por el nombre de tu fotografía. -->
         <img
           class="media-card__media media-card__image"
-          src="img/Camiones.png"
+          src="img/Trailer.png"
           alt="Fotografía que representa mi trayectoria"
           loading="lazy">
 
@@ -130,7 +130,7 @@
         <!-- Reemplaza proyectos.jpg por el nombre de tu fotografía. -->
         <img
           class="media-card__media media-card__image"
-          src="img/Camionetas.png"
+          src="img/CEDIS.png"
           alt="Fotografía que representa mis proyectos"
           loading="lazy">
 
@@ -146,7 +146,63 @@
       </article>
 
 
-    </section>
+    </section> <!-- FIN DEL HERO -->
+
+     <!-- SECCION PRODUCTOS -->
+
+     <section id="productos" class="products">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Soluciones logísticas integrales</p>
+          <h2>Conoce nuestros servicios</h2>
+          <p class="lead">Ofrecemos soluciones de transporte, distribución y logística para conectar tus operaciones con seguridad, eficiencia y confianza.</p>
+        </div>
+
+        <!-- SERVICIO 1 - TRACTOCAMIONES -->
+<div class="product-grid">
+          <article class="product-card reveal">
+            <img src="img/Camiones.png" alt="Flota de tractocamiones de NEXORA Logistics">
+            <div class="product-body">
+              <span class="tag">Servicio destacado</span>
+              <h3>Transporte de carga</h3>
+              <p class="price">Cotización personalizada</p>
+              <p class="description">Trasladamos mercancías de manera segura y eficiente, con soluciones de transporte adaptadas a las necesidades de cada empresa.</p>
+              <button type="button" class="btn card" onclick="openModal('modal-caja')">Ver servicio</button>
+            </div>
+          </article>      
+
+           <!-- SERVICIO 2 - CAMIONETAS -->
+            <article class="product-card reveal">
+            <img src="img/Camionetas.png" alt="Camionetas de distribución de NEXORA Logistics">
+            <div class="product-body">
+              <span class="tag">Distribución</span>
+              <h3>Distribución de mercancías</h3>
+              <p class="price">Cotización por entrega</p>
+              <p class="description">Realizamos entregas y distribución de mercancías mediante unidades versátiles, adaptadas a las necesidades de cada operación.</p>
+              <button type="button" class="btn card" onclick="openModal('modal-distribucion')">Ver servicio</button>
+            </div>
+          </article>
+
+           <!-- SERVICIO 3 - ALMACEN -->
+            <article class="product-card reveal">
+            <img src="img/Almacen.png" alt="Almacén logístico moderno de NEXORA Logistics">
+            <div class="product-body">
+              <span class="tag">Almacenamiento</span>
+              <h3>Almacenamiento logístico</h3>
+              <p class="price">Cotización por espacio y tiempo</p>
+              <p class="description">Ofrecemos espacios y soluciones para el resguardo, organización y manejo de mercancías, facilitando el control de inventarios.</p>
+              <button type="button" class="btn card" onclick="openModal('modal-almacenamiento')">Ver servicio</button>
+            </div>
+          </article>
+
+
+
+
+          </div>
+          </div>
+      </section>
+
+        
 
 </main>
 
