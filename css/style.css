@@ -80,6 +80,7 @@ img {
     display: flex;
     align-items: center;
     gap: 2rem;
+    white-space: nowrap;
 }
 
 .nav-nexora ul {
@@ -95,24 +96,28 @@ img {
     text-decoration: none;
     color: #FFFFFF;
     font-weight: 500;
+    white-space: nowrap;
     transition: color 0.2s ease;
 }
 
 .nav-nexora a:hover {
-    color: #159FC3; /* Color principal de NEXORA */
+    color: #159FC3;
 }
 
 /* Boton de WhatsApp */
 .btn.primary {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 0.5rem;
     padding: 0.65rem 1.25rem;
     border: none;
     border-radius: 9999px;
-    background-color: #159FC3; /* Ajusta al color de tu marca */
+    background-color: #159FC3;
     color: #FFFFFF;
     font-weight: 600;
+    white-space: nowrap;
+    flex-shrink: 0;
     cursor: pointer;
     transition: opacity 0.2s ease, transform 0.2s ease;
 }
@@ -125,6 +130,7 @@ img {
 .btn.primary svg {
   width: 18px;
   height: 18px;
+  flex-shrink: 0;
 }
 
 /* Ajuste básico para celulares */
@@ -574,7 +580,189 @@ section { padding: 4rem 0; }
   line-height: 1.6;
 }
 
+/* CONFIGURACIONES DE DIFERENCIADORES */
 
+.benefits-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.benefit-card {
+  background: rgba(255,255,255,.9);
+  border: 1px solid #DCE5EA;
+  border-radius: 20px;
+  padding: 1.25rem;
+  box-shadow: 0 8px 20px rgba(9,43,76,.06);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 28px rgba(9,43,76,.12);
+}
+
+.benefit-icon {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 15px;
+  background: #E5F4F8;
+  color: #159FC3;
+  margin-bottom: 1rem;
+}
+
+.benefit-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: .4rem;
+  color: #092B4C;
+}
+
+.benefit-card p {
+  color: #687D8F;
+}
+
+/* TESTIMONIOS, RESEÑAS, ETC */
+
+.testimonials { 
+  background: #F3F6F8; 
+}
+
+.section-heading-row { 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: flex-end; 
+  gap: 1rem; 
+}
+
+.testimonial-viewport { 
+  overflow: hidden; 
+  margin-top: 2rem; 
+}
+
+.testimonial-track { 
+  display: flex; 
+  transition: transform .35s ease; 
+}
+
+.testimonial-slide { 
+  min-width: 100%; 
+}
+
+.testimonial-card {
+  background: #FFFFFF;
+  border: 1px solid #DCE5EA;
+  border-radius: 24px;
+  min-height: 245px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 20px rgba(9,43,76,.06);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 28px rgba(9,43,76,.12);
+}
+
+.testimonial-header { 
+  display: flex; 
+  align-items: center; 
+  gap: .75rem; 
+}
+
+.avatar { 
+  width: 46px; 
+  height: 46px; 
+  border-radius: 50%; 
+  object-fit: cover; 
+  border: 2px solid #E5F4F8;
+}
+
+.name { 
+  font-weight: 700; 
+  color: #092B4C;
+}
+
+.occasion { 
+  font-size: .9rem; 
+  color: #687D8F; 
+}
+
+.quote { 
+  margin-top: 1.5rem; 
+  font-size: 1.1rem; 
+  line-height: 1.6; 
+  color: #31566B; 
+}
+
+.stars { 
+  margin-top: 1.2rem; 
+  color: #159FC3; 
+}
+
+
+.carousel-controls { 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  gap: 1rem; 
+  margin-top: 1.5rem; 
+}
+
+.carousel-controls button[id] {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid #DCE5EA;
+  background: #FFFFFF;
+  color: #092B4C;
+  cursor: pointer;
+  transition: background .2s ease, color .2s ease;
+}
+
+.carousel-controls button[id]:hover {
+  background: #159FC3;
+  color: #FFFFFF;
+}
+
+.dots { 
+  display: flex; 
+  gap: .5rem; 
+}
+
+.dots button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  background: #A3B0B9;
+  cursor: pointer;
+  padding: 0;
+}
+
+.dots button.active { 
+  background: #159FC3; 
+}
+
+
+@media (min-width: 768px) {
+  .testimonial-track { 
+    transform: none !important; 
+    gap: 1rem; 
+  }
+
+  .testimonial-slide { 
+    min-width: 0; 
+    flex: 1; 
+  }
+
+  .carousel-controls { 
+    display: none; 
+  }
+}
 
 /*footer*/
 

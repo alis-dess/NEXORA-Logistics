@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js"></script>
   <link rel="stylesheet" href="css/style.css">
 
 <title>NEXORA Logistics | Logistica Integral, Transporte y Distribucion</title>
@@ -195,12 +195,149 @@
             </div>
           </article>
 
+          <!-- SERVICIO 4 - MONITOREO GPS -->
+            <article class="product-card reveal">
+            <img src="img/Monitoreo.png" alt="Centro de monitoreo GPS de NEXORA Logistics">
+            <div class="product-body">
+              <span class="tag">Tecnología y seguridad</span>
+              <h3>Monitoreo y rastreo GPS</h3>
+              <p class="price">Tarifa por unidad monitoreada</p>
+              <p class="description">Supervisamos las unidades mediante herramientas de geolocalización para dar seguimiento a los recorridos y mejorar el control de los envíos.</p>
+              <button type="button" class="btn card" onclick="openModal('modal-monitoreo')">Ver servicio</button>
+            </div>
+          </article>
 
+          <!-- SERVICIO 5 - GESTIÓN DE OPERACIONES -->
+            <article class="product-card reveal">
+            <img src="img/Operaciones.png" alt="Camión de carga en centro de operaciones de NEXORA Logistics">
+            <div class="product-body">
+              <span class="tag">Logística integral</span>
+              <h3>Gestión de operaciones</h3>
+              <p class="price">Cotización por operación</p>
+              <p class="description">Coordinamos recursos, unidades y procesos de transporte para mantener operaciones organizadas y eficientes durante cada etapa del servicio.</p>
+              <button type="button" class="btn card" onclick="openModal('modal-operaciones')">Ver servicio</button>
+            </div>
+          </article>
 
+          <!-- SERVICIO 6 - CENTROS DE DISTRIBUCIÓN -->
+            <article class="product-card reveal">
+            <img src="img/CentroDistribucion.png" alt="Centro de distribución de NEXORA Logistics">
+            <div class="product-body">
+              <span class="tag">Distribución integral</span>
+              <h3>Centros de distribución</h3>
+              <p class="price">Cotización personalizada</p>
+              <p class="description">Facilitamos el flujo de mercancías mediante procesos de recepción, organización y distribución para optimizar la cadena de suministro.</p>
+              <button type="button" class="btn card" onclick="openModal('modal-centro')">Ver servicio</button>
+            </div>
+          </article>
 
           </div>
           </div>
       </section>
+
+      <!-- SECCION DIFERENCIADORES -->
+
+       <section id="diferenciador" class="unicos">
+      <div class="container">
+        <div class="section-heading reveal">
+          <h2>¿Por qué elegirnos?</h2>
+        </div>
+
+
+        <div class="benefits-grid">
+
+          <!-- DIFERENCIADOR 1 -->
+          <article class="benefit-card reveal">
+            <div class="benefit-icon"><i data-lucide="shield-check"></i></div>
+            <h3>Seguridad y monitoreo</h3>
+            <p>Seguimiento GPS y supervisión de recorridos para brindar mayor control y seguridad a tus envíos.</p>
+          </article>
+
+          <!-- DIFERENCIADOR 2 -->
+          <article class="benefit-card reveal">
+            <div class="benefit-icon"><i data-lucide="sliders-horizontal"></i></div>
+            <h3>Soluciones personalizadas</h3>
+            <p>Adaptamos nuestros servicios de transporte y distribución a las necesidades de cada empresa y operación.</p>
+          </article>
+
+          <!-- DIFERENCIADOR 3 -->
+          <article class="benefit-card reveal">
+            <div class="benefit-icon"><i data-lucide="headset"></i></div>
+            <h3>Atención integral</h3>
+            <p>Acompañamos a nuestros clientes desde la planeación hasta la entrega de su mercancía, manteniendo una comunicación constante.</p>
+          </article>
+
+          <!-- DIFERENCIADOR 4 -->
+          <article class="benefit-card reveal">
+            <div class="benefit-icon"><i data-lucide="truck"></i></div>
+            <h3>Flexibilidad operativa</h3>
+            <p>Ofrecemos alternativas de transporte y distribución adaptadas a distintos tipos de carga y necesidades empresariales.</p>
+          </article>
+
+          </div>
+          </div>
+          </section>
+
+<!-- TESTIMONIOS, HISTORIAS, OPINIONES, RESEÑAS, ETC-->       
+ <section class="testimonials">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Experiencias que nos respaldan</p>
+          <h2>Lo que dicen nuestros clientes</h2>
+        </div>
+
+
+        <div class="testimonial-viewport">
+          <div id="testimonial-track" class="testimonial-track">
+
+            <!-- RESEÑA 1 -->
+            <article class="testimonial-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-header">
+                  <img class="avatar" src="img/Cliente1.png" alt="Logotipo de DHL.">
+                  <div>
+                    <p class="name">DHL</p>
+                    <p class="occasion">Transporte de carga y monitoreo GPS</p>
+                  </div>
+                </div>
+                <p class="quote">"La puntualidad en los traslados, el seguimiento de las unidades y la seguridad de la mercancía son fundamentales para mantener una operación logística eficiente y confiable."</p>
+                <div class="stars" aria-label="Cinco estrellas">★★★★★</div>
+              </div>
+            </article>   
+
+            <!-- RESEÑA 2 -->
+            <article class="testimonial-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-header">
+                  <img class="avatar" src="img/Cliente2.png" alt="Logotipo de Walmart.">
+                  <div>
+                    <p class="name">Walmart</p>
+                    <p class="occasion">Almacenamiento y gestión de operaciones</p>
+                  </div>
+                </div>
+                <p class="quote">"La organización de la mercancía y la coordinación de las operaciones logísticas son fundamentales para mantener un flujo eficiente de productos y cumplir con las necesidades de distribución."</p>
+                <div class="stars" aria-label="Cinco estrellas">★★★★★</div>
+              </div>
+            </article>
+
+            <!-- RESEÑA 3 -->
+            <article class="testimonial-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-header">
+                  <img class="avatar" src="img/Cliente3.png" alt="Logotipo de Amazon.">
+                  <div>
+                    <p class="name">Amazon</p>
+                    <p class="occasion">Transporte y distribución de mercancías</p>
+                  </div>
+                </div>
+                <p class="quote">"La coordinación logística, el seguimiento de los envíos y la eficiencia en las entregas son elementos clave para mantener nuestras operaciones en movimiento."</p>
+                <div class="stars" aria-label="Cinco estrellas">★★★★★</div>
+              </div>
+            </article>
+            </div>
+            </div>
+            </div>
+            </section>
 
         
 
@@ -212,6 +349,8 @@
         <p>© <span id="current-year"></span> NEXORA Logistics. Todos los derechos reservados.</p>
         <a href="#inicio">Volver arriba ↑</a>
     </footer>
+
+    <script src="js/script.js"></script>
 
 </body>
 </html>
