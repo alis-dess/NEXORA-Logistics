@@ -764,6 +764,43 @@ section { padding: 4rem 0; }
   }
 }
 
+/* CONTACTO */
+
+.contact-panel {
+  display: grid;
+  gap: 2rem;
+  background: #E5F4F8;
+  border: 1px solid #DCE5EA;
+  border-radius: 30px;
+  padding: 1.5rem;
+}
+.contact-text .btn { margin-top: 1.8rem; width: 100%; }
+.contact-info {
+  background: #FFFFFF;
+  border-radius: 24px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 20px rgba(9,43,76,.06);
+}
+.contact-info ul { display: flex; flex-direction: column; gap: 1.2rem; }
+.contact-info li { display: flex; align-items: center; gap: .75rem; }
+.contact-info i {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #E5F4F8;
+  color: #159FC3;
+  flex-shrink: 0;
+}
+.contact-info a { font-weight: 700; color: #092B4C; text-decoration: underline; text-decoration-color: #159FC3; }
+
+
+@media (min-width: 900px) {
+  .contact-panel { grid-template-columns: 1.1fr .9fr; padding: 2.5rem; }
+  .contact-text .btn { width: auto; }
+}
+
 /*footer*/
 
 .site-footer {
