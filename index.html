@@ -167,7 +167,7 @@
               <h3>Transporte de carga</h3>
               <p class="price">Cotización personalizada</p>
               <p class="description">Trasladamos mercancías de manera segura y eficiente, con soluciones de transporte adaptadas a las necesidades de cada empresa.</p>
-              <button type="button" class="btn card" onclick="openModal('modal-caja')">Ver servicio</button>
+              <button type="button" class="btn card" onclick="openModal('modal-transporte')">Ver servicio</button>
             </div>
           </article>      
 
@@ -354,6 +354,7 @@
                 <li><i data-lucide="instagram"></i> <a href="https://www.instagram.com/alss__ds?knvt=b2sxZzFzMGFsenp5&utm_source=qr" target="_blank" rel="noopener noreferrer">@alss__ds</a></li>
                 <li><i data-lucide="facebook"></i> <a href="https://www.facebook.com/share/1CMm6ejJQW/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">Alison Rivas</a></li>
                 <li><i data-lucide="mail"></i> <a href="mailto:ad.rivas001@ebc.edu.mx">ad.rivas001@ebc.edu.mx</a></li>
+                <li><i data-lucide="map"></i> <a href="https://maps.app.goo.gl/QFpkyAqbzep3fKPh9">EBC</a></li>
                 <li><i data-lucide="clock-3"></i> Lunes a sábado, 08:00 a 18:00</li>
               </ul>
             </aside>
@@ -368,6 +369,144 @@
         <p>© <span id="current-year"></span> NEXORA Logistics. Todos los derechos reservados.</p>
         <a href="#inicio">Volver arriba ↑</a>
     </footer>
+
+    <!-- MODAL PARA LOS PRODUCTOS O SERVICIOS, ETC -->
+
+     <div id="modal-transporte" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-transporte-title">
+    <div class="modal-panel">
+      <div class="modal-image">
+        <img src="img/Camiones.png" alt="Flota de tractocamiones de NEXORA Logistics.">
+        <button type="button" class="modal-close" aria-label="Cerrar servicio" onclick="closeModal('modal-transporte')"><i data-lucide="x"></i></button>
+      </div>
+      <div class="modal-body">
+        <h2 id="modal-transporte-title">Transporte de carga</h2>
+        <p class="price">Cotización personalizada</p>
+        <p>Ofrecemos soluciones de transporte de mercancías para empresas, con unidades adecuadas para cada operación y atención enfocada en la seguridad, eficiencia y cumplimiento de los tiempos de entrega.</p>
+        <h3>El servicio incluye:</h3>
+        <ul>
+          <li>Transporte de mercancías</li>
+          <li>Seguimiento y monitoreo de unidades</li>
+          <li>Coordinación de traslados y entregas</li>
+        </ul>
+        <button type="button" class="btn primary" onclick="openWhatsApp('Hola, me gustaría solicitar una cotización para el servicio de transporte de carga de NEXORA Logistics.')">Solicitar cotización</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL PARA LA TARJETA 2 -->
+
+  <div id="modal-distribucion" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-distribucion-title">
+    <div class="modal-panel">
+      <div class="modal-image">
+        <img src="img/Camionetas.png" alt="Camionetas de distribución de NEXORA Logistics.">
+        <button type="button" class="modal-close" aria-label="Cerrar servicio" onclick="closeModal('modal-distribucion')"><i data-lucide="x"></i></button>
+      </div>
+      <div class="modal-body">
+        <h2 id="modal-distribucion-title">Distribución de mercancías</h2>
+        <p class="price">Cotización por entrega</p>
+        <p>Realizamos servicios de distribución y entrega de mercancías mediante unidades versátiles, adaptadas a las necesidades de cada empresa. Buscamos garantizar entregas eficientes, seguras y organizadas.</p>
+        <h3>El servicio incluye:</h3>
+        <ul>
+          <li>Distribución de mercancías</li>
+          <li>Coordinación de rutas y entregas</li>
+          <li>Seguimiento de unidades durante los recorridos</li>
+        </ul>
+        <button type="button" class="btn primary" onclick="openWhatsApp('Hola, me gustaría solicitar una cotización para el servicio de distribución de mercancías de NEXORA Logistics.')">Solicitar cotización</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL PARA LA TARJETA 3 -->
+
+<div id="modal-almacenamiento" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-almacenamiento-title">
+    <div class="modal-panel">
+      <div class="modal-image">
+        <img src="img/Almacen.png" alt="Instalaciones de almacenamiento logístico de NEXORA Logistics.">
+        <button type="button" class="modal-close" aria-label="Cerrar servicio" onclick="closeModal('modal-almacenamiento')"><i data-lucide="x"></i></button>
+      </div>
+      <div class="modal-body">
+        <h2 id="modal-almacenamiento-title">Almacenamiento logístico</h2>
+        <p class="price">Cotización personalizada</p>
+        <p>Ofrecemos soluciones de almacenamiento para mercancías, con espacios organizados y procesos de control que permiten mantener un manejo eficiente y seguro de los productos de cada empresa.</p>
+        <h3>El servicio incluye:</h3>
+        <ul>
+          <li>Recepción y resguardo de mercancías</li>
+          <li>Control y organización de inventarios</li>
+          <li>Preparación de mercancías para su distribución</li>
+        </ul>
+        <button type="button" class="btn primary" onclick="openWhatsApp('Hola, me gustaría solicitar una cotización para el servicio de almacenamiento logístico de NEXORA Logistics.')">Solicitar cotización</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL PARA LA TARJETA 4 -->
+
+<div id="modal-monitoreo" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-monitoreo-title">
+    <div class="modal-panel">
+      <div class="modal-image">
+        <img src="img/Monitoreo.png" alt="Sistema de monitoreo y rastreo GPS de NEXORA Logistics.">
+        <button type="button" class="modal-close" aria-label="Cerrar servicio" onclick="closeModal('modal-monitoreo')"><i data-lucide="x"></i></button>
+      </div>
+      <div class="modal-body">
+        <h2 id="modal-monitoreo-title">Monitoreo y rastreo GPS</h2>
+        <p class="price">Cotización personalizada</p>
+        <p>Brindamos soluciones de monitoreo y rastreo GPS para mantener el control y la visibilidad de las unidades durante sus recorridos. Nuestro servicio permite supervisar los traslados y conocer la ubicación de la mercancía en tiempo real.</p>
+        <h3>El servicio incluye:</h3>
+        <ul>
+          <li>Rastreo GPS de unidades</li>
+          <li>Supervisión de rutas y recorridos</li>
+          <li>Seguimiento de ubicación y reportes de viaje</li>
+        </ul>
+        <button type="button" class="btn primary" onclick="openWhatsApp('Hola, me gustaría solicitar una cotización para el servicio de monitoreo y rastreo GPS de NEXORA Logistics.')">Solicitar cotización</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL PARA LA TARJETA 5 -->
+
+<div id="modal-operaciones" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-operaciones-title">
+    <div class="modal-panel">
+      <div class="modal-image">
+        <img src="img/Operaciones.png" alt="Gestión de operaciones logísticas de NEXORA Logistics.">
+        <button type="button" class="modal-close" aria-label="Cerrar servicio" onclick="closeModal('modal-operaciones')"><i data-lucide="x"></i></button>
+      </div>
+      <div class="modal-body">
+        <h2 id="modal-operaciones-title">Gestión de operaciones</h2>
+        <p class="price">Cotización personalizada</p>
+        <p>Coordinamos y supervisamos los procesos logísticos de cada empresa para optimizar sus operaciones. Integramos la planeación, organización y seguimiento de actividades para lograr un flujo de trabajo eficiente y confiable.</p>
+        <h3>El servicio incluye:</h3>
+        <ul>
+          <li>Planeación y coordinación de operaciones logísticas</li>
+          <li>Control y seguimiento de actividades</li>
+          <li>Optimización de procesos y recursos</li>
+        </ul>
+        <button type="button" class="btn primary" onclick="openWhatsApp('Hola, me gustaría solicitar una cotización para el servicio de gestión de operaciones de NEXORA Logistics.')">Solicitar cotización</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL PARA LA TARJETA 6 -->
+
+<div id="modal-centro" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-centro-title">
+    <div class="modal-panel">
+      <div class="modal-image">
+        <img src="img/CentroDistribucion.png" alt="Centro de distribución de NEXORA Logistics.">
+        <button type="button" class="modal-close" aria-label="Cerrar servicio" onclick="closeModal('modal-centro')"><i data-lucide="x"></i></button>
+      </div>
+      <div class="modal-body">
+        <h2 id="modal-centro-title">Centros de distribución</h2>
+        <p class="price">Cotización personalizada</p>
+        <p>Ofrecemos soluciones para la recepción, organización y distribución de mercancías desde centros estratégicos. Facilitamos el movimiento de productos para optimizar los tiempos de entrega y mejorar la eficiencia de la cadena de suministro.</p>
+        <h3>El servicio incluye:</h3>
+        <ul>
+          <li>Recepción y clasificación de mercancías</li>
+          <li>Organización y preparación de pedidos</li>
+          <li>Coordinación de distribución y despacho</li>
+        </ul>
+        <button type="button" class="btn primary" onclick="openWhatsApp('Hola, me gustaría solicitar una cotización para el servicio de centros de distribución de NEXORA Logistics.')">Solicitar cotización</button>
+      </div>
+    </div>
+  </div>
 
     <script src="js/script.js"></script>
 
